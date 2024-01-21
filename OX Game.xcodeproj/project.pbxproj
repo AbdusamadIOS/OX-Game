@@ -8,24 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		EEB3BE812B5D5F3300066736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3BE802B5D5F3300066736 /* AppDelegate.swift */; };
-		EEB3BE832B5D5F3300066736 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3BE822B5D5F3300066736 /* SceneDelegate.swift */; };
-		EEB3BE852B5D5F3300066736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3BE842B5D5F3300066736 /* ViewController.swift */; };
-		EEB3BE882B5D5F3300066736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB3BE862B5D5F3300066736 /* Main.storyboard */; };
 		EEB3BE8B2B5D5F3300066736 /* OX_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEB3BE892B5D5F3300066736 /* OX_Game.xcdatamodeld */; };
 		EEB3BE8D2B5D5F3500066736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB3BE8C2B5D5F3500066736 /* Assets.xcassets */; };
 		EEB3BE902B5D5F3500066736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB3BE8E2B5D5F3500066736 /* LaunchScreen.storyboard */; };
+		EEB3BE992B5D5F7000066736 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3BE972B5D5F7000066736 /* MainVC.swift */; };
+		EEB3BE9A2B5D5F7000066736 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB3BE982B5D5F7000066736 /* MainVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEB3BE7D2B5D5F3300066736 /* OX Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OX Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB3BE802B5D5F3300066736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EEB3BE822B5D5F3300066736 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEB3BE842B5D5F3300066736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEB3BE872B5D5F3300066736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEB3BE8A2B5D5F3300066736 /* OX_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OX_Game.xcdatamodel; sourceTree = "<group>"; };
 		EEB3BE8C2B5D5F3500066736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEB3BE8F2B5D5F3500066736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEB3BE912B5D5F3500066736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEB3BE972B5D5F7000066736 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		EEB3BE982B5D5F7000066736 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +56,47 @@
 		EEB3BE7F2B5D5F3300066736 /* OX Game */ = {
 			isa = PBXGroup;
 			children = (
-				EEB3BE802B5D5F3300066736 /* AppDelegate.swift */,
-				EEB3BE822B5D5F3300066736 /* SceneDelegate.swift */,
-				EEB3BE842B5D5F3300066736 /* ViewController.swift */,
-				EEB3BE862B5D5F3300066736 /* Main.storyboard */,
-				EEB3BE8C2B5D5F3500066736 /* Assets.xcassets */,
-				EEB3BE8E2B5D5F3500066736 /* LaunchScreen.storyboard */,
+				EEB3BE9E2B5D8D1A00066736 /* System File */,
+				EEB3BE9B2B5D8CCD00066736 /* MainView */,
 				EEB3BE912B5D5F3500066736 /* Info.plist */,
 				EEB3BE892B5D5F3300066736 /* OX_Game.xcdatamodeld */,
 			);
 			path = "OX Game";
+			sourceTree = "<group>";
+		};
+		EEB3BE9B2B5D8CCD00066736 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3BE9C2B5D8CDF00066736 /* MainView swiftfile */,
+				EEB3BE9D2B5D8D0200066736 /* MainView xibfile */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		EEB3BE9C2B5D8CDF00066736 /* MainView swiftfile */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3BE972B5D5F7000066736 /* MainVC.swift */,
+			);
+			path = "MainView swiftfile";
+			sourceTree = "<group>";
+		};
+		EEB3BE9D2B5D8D0200066736 /* MainView xibfile */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3BE982B5D5F7000066736 /* MainVC.xib */,
+			);
+			path = "MainView xibfile";
+			sourceTree = "<group>";
+		};
+		EEB3BE9E2B5D8D1A00066736 /* System File */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3BE802B5D5F3300066736 /* AppDelegate.swift */,
+				EEB3BE8C2B5D5F3500066736 /* Assets.xcassets */,
+				EEB3BE8E2B5D5F3500066736 /* LaunchScreen.storyboard */,
+			);
+			path = "System File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB3BE9A2B5D5F7000066736 /* MainVC.xib in Resources */,
 				EEB3BE902B5D5F3500066736 /* LaunchScreen.storyboard in Resources */,
 				EEB3BE8D2B5D5F3500066736 /* Assets.xcassets in Resources */,
-				EEB3BE882B5D5F3300066736 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEB3BE8B2B5D5F3300066736 /* OX_Game.xcdatamodeld in Sources */,
-				EEB3BE852B5D5F3300066736 /* ViewController.swift in Sources */,
+				EEB3BE992B5D5F7000066736 /* MainVC.swift in Sources */,
 				EEB3BE812B5D5F3300066736 /* AppDelegate.swift in Sources */,
-				EEB3BE832B5D5F3300066736 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EEB3BE862B5D5F3300066736 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEB3BE872B5D5F3300066736 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EEB3BE8E2B5D5F3500066736 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +321,7 @@
 				INFOPLIST_FILE = "OX Game/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +349,7 @@
 				INFOPLIST_FILE = "OX Game/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

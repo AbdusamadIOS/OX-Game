@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="Ad7-6t-WCh">
-                                <rect key="frame" x="106.66666666666669" y="336" width="180" height="180"/>
+                                <rect key="frame" x="131.66666666666666" y="361" width="129.99999999999997" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="74K-dD-NYE"/>
-                                    <constraint firstAttribute="width" constant="180" id="gO1-ej-hnj"/>
+                                    <constraint firstAttribute="height" constant="130" id="74K-dD-NYE"/>
+                                    <constraint firstAttribute="width" constant="130" id="gO1-ej-hnj"/>
                                 </constraints>
                             </imageView>
                         </subviews>

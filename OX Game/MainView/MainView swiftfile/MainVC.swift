@@ -38,10 +38,13 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         initBoard()
         stackView.layer.cornerRadius = 20
         stackView.clipsToBounds = true
     }
+    
+    // MARK:  Init board
     func initBoard() {
             board.append(a1)
             board.append(a2)
@@ -54,6 +57,7 @@ class MainVC: UIViewController {
             board.append(c3)
         }
 
+    // MARK: Tap Action Button
         @IBAction func boardTapAction(_ sender: UIButton) {
             addToBoard(sender)
             
@@ -72,6 +76,7 @@ class MainVC: UIViewController {
             }
         }
         
+    // MARK: Check Victory Func
         func checkForVictory(_ s :String) -> Bool {
             // Horizontal Victory
             if thisSymbol(a1, s) && thisSymbol(a2, s) && thisSymbol(a3, s) {
@@ -106,10 +111,12 @@ class MainVC: UIViewController {
             return false
         }
         
+    // MARK: Symbol func
         func thisSymbol(_ button: UIButton, _ symbol: String) -> Bool {
             return button.title(for: .normal) == symbol
         }
         
+    // MARK: Result Alert Setting
         func resultAlert(title: String) {
             
             let message = "\nNoughts " + String(noughtsScore) + "\n\nCrosses " + String(crossesScore)
@@ -120,6 +127,7 @@ class MainVC: UIViewController {
             self.present(ac, animated: true)
         }
         
+    // MARK: ResetBoard func
         func resetBoard() {
             for button in board {
                 button.setTitle(nil, for: .normal)
@@ -144,6 +152,7 @@ class MainVC: UIViewController {
             return true
         }
         
+    // MARK: Add Board func
         func addToBoard(_ sender: UIButton) {
             if(sender.title(for: .normal) == nil) {
                 if(currentTurn == Turn.Nought) {
